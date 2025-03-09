@@ -8,7 +8,7 @@ import re # regular expressions to extract the text patterns
 
 # Function to fetch research papers from PubMed using the Entrez API (using efetch for more details)
 def fetch_papers(query: str, max_results: int = 100) -> List[Dict]:
-    Entrez.email ='saiindupuri.25@gmail.com'  # Always use a valid email address
+    Entrez.email ='subbuthoto91@gmail.com'  # Always use a valid email address
     handle = Entrez.esearch(db="pubmed", term=query, retmax=max_results)
     record = Entrez.read(handle)
     ids = record["IdList"]
